@@ -89,6 +89,7 @@ When it comes down to buying or selling a house, there are many factors that go 
 
 ## References:
 Bhandari, Aniruddha. “Feature Scaling: Standardization vs Normalization.” Analytics Vidhya, August 26, 2021. https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/#h2_6.
+
 Kaggle: House Prices - Advanced Regression Techniques. https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
 
 ## Repository Information:
