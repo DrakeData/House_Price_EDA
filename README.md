@@ -11,7 +11,7 @@ Now let’s load the data into a pandas data frame and run descriptive statistic
 ![describ_data](images/image1.PNG)
 
 The first thing I notice is that there is a count of 1460 values within the data frame. There are several columns that have null values, in which we will look into:
-![data_null](images/image2.png)
+![data_null](images/image2.PNG)
 There are 34 columns within this data set that contain null values. To simplify what needs to be down, I have broken the data down into 3 groups:
 **Group 1:**  Categorical variables where the nulls mean no feature.
 -	For these variables, I will replace ‘NA’ with ‘None’
@@ -26,15 +26,55 @@ There are 34 columns within this data set that contain null values. To simplify 
 
 ## Data Analysis
 After the data has been cleaned up, we can begin investigating potential predictors of a home’s sale price. The first thing I did was check to see if there are any correlation with the numeric variables and sale price:
-![data_corr](images/image3.png)
+![data_corr](images/image3.PNG)
 
 We can see that OverallQual, and GrLivArea have a decently high correlation to sale price. Let us dig a little deeper by visualizing them:
-![box_plot1](images/image4.png)
+![box_plot1](images/image4.PNG)
 From the above visualization, we can see that the higher the quality of the house correlates with a higher sale price.
 
-![scatt_plot1](images/image5.png)
+![scatt_plot1](images/image5.PNG)
 Looking at the above scatter plot, there is a correlation between the above grade (ground) living area and sale price. We can also see there are a couple outliers that have a high living area and a low sale price. We would want to remove these outliers as it can affect any future models that we decide to use with this data later on.
 
 Lastly, I wanted to see if there was a correlation with fireplace quality and sale price:
-![box_plot2](images/image6)
+![box_plot2](images/image6.PNG)
 Interesting discovery: it’s better to not have a fireplace than a poor quality fireplace. Having an excellent quality fireplace does help increase the sale price.
+
+## Improving the Data Set
+There are a couple data points that I have added to the data set:
+-	Total square feet of the house: add square feet on the first floor, second floor, and basement
+-	Total bathrooms in the house: add all the full and half bathrooms on the first floor and basement
+-	Age of house: subtract YearBuilt column from YrSold
+-	Was the house remodeled (Y/N): check to see if YearRemodAdd column equals YearBuilt
+
+## Scaling the Dependent Variable
+Since the scale of the different potential predictors of the dependent variable are vary, we want to scale the variables to a more standard range. This is done by performing MinMax Scaling and Standard Scaling.
+-	**MinMax Scaling** fits the data values and transforms them to correspond to 1 and 0 (Bhandari 2021).
+The formula for normalization:
+![minmax_form](images/image8.PNG)
+-	 **Standard Scaling** centers the values around the mean with a unit standard deviation. It shifts the values rescales them to be in a range between 1 and 0 (Bhandari 2021)
+The formula for standardization:
+![stanscal_form](images/image7.PNG)
+
+For this exercise, we will be scaling the dependent variables of OverallQual, GrLivArea, and FireplaceQu against SalePrice. We will first start by just looking at the data without scaling:
+![no_scale](images/image9.PNG)
+From the visualization, we can see that OverallQual and GrLivArea have strong correlation with SalePrice. FireplaceQu (far right graph) was not as strong as I was hoping, in which I will remove it from the standardization.
+
+Next, I will us MinMax Scaler to normalize the data:
+![MinMax_scale](images/image10.PNG)
+From the normalize data, you can see that it keeps the similar skewness of the data and puts it in a range between 0 and 1.
+
+Finally, let’s look the Standard Scaling of the data:
+![Stand_scale](images/image11.PNG)
+The data points are scaled by calculating the mean and the standard deviation parameters to “fit” the data.
+
+## Conclusion
+When it comes down to buying or selling a house, there are many factors that go into generating the sale price. Through this exercise, we examined the real estate data set, handled the null values, identified potential dependent features to the sale price, created new data points, and scaled a few dependent variables. The overall quality of the house and the living area are two main features that correlate with the house sales price. In future studies, I would like to investigate property tax data and see if that is potentially correlated with sales price or not.
+
+## References:
+Bhandari, Aniruddha. “Feature Scaling: Standardization vs Normalization.” Analytics Vidhya, August 26, 2021. https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/#h2_6.
+Kaggle: House Prices - Advanced Regression Techniques. https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
+
+## Repository Information:
+Created by: Nicholas Drake
+Created Date: 1/9/2022
+MSDS 422: Practical Machine Learning
