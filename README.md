@@ -7,7 +7,9 @@ Before we start digging deep into the data, I always like to review the data dic
 
 ## Data Cleaning
 Now let’s load the data into a pandas data frame and run descriptive statistics and visualizations to help understand the marginal distribution of the dependent variables.
+
 ![describ_data](images/image1.png)
+
 The first thing I notice is that there is a count of 1460 values within the data frame. There are several columns that have null values, in which we will look into:
 ![data_null](images/image2.png)
 There are 34 columns within this data set that contain null values. To simplify what needs to be down, I have broken the data down into 3 groups:
