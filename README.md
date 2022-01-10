@@ -87,7 +87,7 @@ Finally, let’s look the Standard Scaling of the data:
 The data points are scaled by calculating the mean and the standard deviation parameters to “fit” the data.
 
 ## Conclusion
-When it comes down to buying or selling a house, there are many factors that go into generating the sale price. Through this exercise, we examined the real estate data set, handled the null values, identified potential dependent features to the sale price, created new data points, and scaled a few dependent variables. The overall quality of the house and the living area are two main features that correlate with the house sales price. In future studies, I would like to investigate property tax data and see if that is potentially correlated with sales price or not.
+Based on the real estate data set, the two main features that drive buyers to purchase homes are the overall quality of the house and the living area that ultimately increase the price of these homes. Overall, the “American Dream” is essentially having a good quality home that one can raise a family and be comfortable. It appears reasonable that these features correlate with sale price. 
 
 ## References:
 Bhandari, Aniruddha. “Feature Scaling: Standardization vs Normalization.” Analytics Vidhya, August 26, 2021. https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/#h2_6.
