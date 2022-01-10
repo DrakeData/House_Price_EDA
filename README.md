@@ -2,7 +2,7 @@
 ## Introduction
 Buying a home has been seen as the “American Dream” for several generations. There are many factors that go into picking out the ideal home for the buyer, as well as determining the sales price for the seller. For this exercise, we will be using [Ames, Iowa Real Estate data set from Kaggle.com](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) to perform Exploratory Data Analysis (EDA) to identify key dependent variables that help determine the sales price of a house.
 
-**Note:** Python code can be found in MSDS422_Assignment1.ipynb
+**Note:** Python code can be found in [MSDS422_Assignment1.ipynb](https://github.com/DrakeData/House_Price_EDA/blob/main/MSDS422_Assignment1.ipynb)
 
 ## Data Exploration
 Before we start digging deep into the data, I always like to review the data dictionary if one is provided. In this case, there is a ‘data_description.txt’ file that helps us understand the data values and what we should expect from the data set. One thing I noticed is that there is a lot of values that contain ‘NA’ as an actually value instead of a null value. We will need to handle this during the data cleanup process.
