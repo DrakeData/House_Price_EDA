@@ -5,7 +5,7 @@ Buying a home has been seen as the “American Dream” for several generations.
 **Note:** Python code can be found in [MSDS422_Assignment1.ipynb](https://github.com/DrakeData/House_Price_EDA/blob/main/MSDS422_Assignment1.ipynb)
 
 ## Data Exploration
-Before we start digging deep into the data, I always like to review the data dictionary if one is provided. In this case, there is a ‘data_description.txt’ file that helps us understand the data values and what we should expect from the data set. One thing I noticed is that there is a lot of values that contain ‘NA’ as an actually value instead of a null value. We will need to handle this during the data cleanup process.
+Before we start digging deep into the data, I always like to review the data dictionary if one is provided. In this case, there is a [‘data_description.txt’](https://github.com/DrakeData/House_Price_EDA/blob/main/data_description.txt) file that helps us understand the data values and what we should expect from the data set. One thing I noticed is that there is a lot of values that contain ‘NA’ as an actually value instead of a null value. We will need to handle this during the data cleanup process.
 
 ## Data Cleaning
 Now let’s load the data into a pandas data frame and run descriptive statistics and visualizations to help understand the marginal distribution of the dependent variables.
