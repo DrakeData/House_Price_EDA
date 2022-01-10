@@ -7,9 +7,9 @@ Before we start digging deep into the data, I always like to review the data dic
 
 ## Data Cleaning
 Now let’s load the data into a pandas data frame and run descriptive statistics and visualizations to help understand the marginal distribution of the dependent variables.
-![describ_data](images/image1)
+![describ_data](images/image1.png)
 The first thing I notice is that there is a count of 1460 values within the data frame. There are several columns that have null values, in which we will look into:
-![data_null](images/image2)
+![data_null](images/image2.png)
 There are 34 columns within this data set that contain null values. To simplify what needs to be down, I have broken the data down into 3 groups:
 **Group 1:**  Categorical variables where the nulls mean no feature.
 -	For these variables, I will replace ‘NA’ with ‘None’
@@ -24,13 +24,13 @@ There are 34 columns within this data set that contain null values. To simplify 
 
 ## Data Analysis
 After the data has been cleaned up, we can begin investigating potential predictors of a home’s sale price. The first thing I did was check to see if there are any correlation with the numeric variables and sale price:
-![data_corr](images/image3)
+![data_corr](images/image3.png)
 
 We can see that OverallQual, and GrLivArea have a decently high correlation to sale price. Let us dig a little deeper by visualizing them:
-![box_plot1](images/image4)
+![box_plot1](images/image4.png)
 From the above visualization, we can see that the higher the quality of the house correlates with a higher sale price.
 
-![scatt_plot1](images/image5)
+![scatt_plot1](images/image5.png)
 Looking at the above scatter plot, there is a correlation between the above grade (ground) living area and sale price. We can also see there are a couple outliers that have a high living area and a low sale price. We would want to remove these outliers as it can affect any future models that we decide to use with this data later on.
 
 Lastly, I wanted to see if there was a correlation with fireplace quality and sale price:
