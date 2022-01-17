@@ -3,7 +3,7 @@
 Buying a home has been seen as the “American Dream” for several generations. There are many factors that go into picking out the ideal home for the buyer, as well as determining the sales price for the seller. For this exercise, we will be using [Ames, Iowa Real Estate data set from Kaggle.com](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) to perform Exploratory Data Analysis (EDA) to identify key dependent variables that help determine the sales price of a house.
 
 ## Notebooks
-- [MSDS422_Assignment1.ipynb](https://github.com/DrakeData/House_Price_EDA/blob/main/MSDS422_Assignment1.ipynb) performs an initial deep dive into the data, examining the null values and handling accordantly. The code exports ‘train_clean.csv’ and ‘test_clean.csv’ files that are saved in the data folder.
+- [MSDS422_Assignment1_Colab.ipynb](https://github.com/DrakeData/House_Price_EDA/blob/main/MSDS422_Assignment1_Colab.ipynb) performs an initial deep dive into the data, examining the null values and handling accordantly. The code exports ‘train_clean.csv’ and ‘test_clean.csv’ files that are saved in the data folder.
 - [MSDS422_Assignment_2_Colab.ipynb](https://github.com/DrakeData/House_Price_EDA/blob/main/MSDS422_Assignment_2_Colab.ipynb) uses the clean data files from MSDS422_Assignment1 to run a simple linear regression model and a multiple regression model to predict SalePrice.
 
 ## Data Exploration
